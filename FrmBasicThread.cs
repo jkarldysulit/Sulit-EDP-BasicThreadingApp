@@ -17,6 +17,7 @@ namespace BasicThreading
 
         private void btnRun_Click(object sender, EventArgs e)
         {
+            Console.WriteLine("-Before starting threads-");
             Thread threadA = new Thread(ThreadClass.Thread1);
             threadA.Name = "Thread A";
 
@@ -30,6 +31,8 @@ namespace BasicThreading
             threadB.Join();
 
             lblStatus.Text = "-End of Thread-";
+            Console.WriteLine("-End of Thread-");
+
         }
     }
 }
