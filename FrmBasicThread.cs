@@ -30,8 +30,8 @@ namespace BasicThreading
             threadA.Join();
             threadB.Join();
 
-            lblStatus.Text = "-End of Thread-";
             Console.WriteLine("-End of Thread-");
+            lblStatus.Text = "-End of Thread-";
 
         }
     }
